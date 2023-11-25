@@ -382,6 +382,7 @@ img {
 }
 .flex-footer {
   display: flex;
+  align-items: baseline;
 }
 .text-footer {
   color: var(--CLOUD, #f4f4fd);
@@ -411,7 +412,6 @@ img {
 
 .footer-first-part {
   margin-right: 120px;
-  align-items: baseline;
 }
 .footer-text-medium {
   color: #ffffff;
