@@ -71,10 +71,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.text-medium:hover,
-.text-medium:focus {
-  color: var(--OCEAN, #404bbf);
-}
 
 .container {
   max-width: 1158px;
@@ -146,8 +142,27 @@ img {
   gap: 40px;
 }
 .menu-link {
-  display: block;
+  display: flex;
   padding: 24px 0;
+  position: relative;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--OCEAN, #404bbf);
+}
+
+.menu-link-main {
+  color: var(--OCEAN, #404bbf);
+}
+.menu-link-main::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px;
+  justify-content: center;
 }
 /* SECTION EFFECTIVE SOLUTIONS */
 .main-title {
