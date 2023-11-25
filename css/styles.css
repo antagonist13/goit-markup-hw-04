@@ -121,6 +121,7 @@ img {
   line-height: 1.5;
   display: block;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover,
 .contact:focus {
@@ -145,6 +146,7 @@ img {
   display: flex;
   padding: 24px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -212,10 +214,11 @@ img {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
-  background: var(--OCEAN, #404bbf);
+  background-color: #404bbf;
 }
 /* SECTION BENEFITS*/
 .section-benefit {
@@ -303,7 +306,10 @@ img {
   align-items: center;
 
   fill: none;
-  transition: stroke 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-link:hover {
+  background-color: #404bbf;
 }
 .social-list-icon {
   stroke: #f4f4fd;
@@ -348,7 +354,10 @@ img {
 
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-portfolio {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-portfolio:hover .overlay {
   transform: translateY(0%);
@@ -362,6 +371,9 @@ img {
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
   padding: 100px 0;
+}
+.flex-footer {
+  display: flex;
 }
 .text-footer {
   color: var(--CLOUD, #f4f4fd);
@@ -384,9 +396,54 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: block;
   padding: 24px 0;
 
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-first-part {
+  margin-right: 120px;
+}
+.footer-text-medium {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 24px 0;
+
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-item-footer {
+  display: flex;
+  flex-direction: row;
+}
+.social-list-link-footer {
+  display: flex;
+  line-height: 0;
+  stroke: #111111;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+
+  fill: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-icon-footer {
+  stroke: #f4f4fd;
+  fill: #f4f4fd;
+  display: block;
+}
+.social-list-link-footer:hover {
+  background-color: #31d0aa;
 }
