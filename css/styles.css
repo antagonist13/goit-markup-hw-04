@@ -281,6 +281,35 @@ img {
   align-items: center;
   margin-bottom: 8px;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.social-list-item {
+  display: flex;
+  flex-direction: row;
+}
+.social-list-link {
+  display: flex;
+  line-height: 0;
+  stroke: #111111;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+
+  fill: none;
+  transition: stroke 250ms linear;
+}
+.social-list-icon {
+  stroke: #f4f4fd;
+  fill: #f4f4fd;
+  display: block;
+}
 
 /* SECTION OUR PORTFOLIO*/
 .section-our-portfolio {
