@@ -571,7 +571,92 @@
             </li>
           </ul>
         </div>
+        <div class="footer-third-part">
+          <label for="subscribe">Subscribe</label>
+          <input class="" type="email" name="" id="subscribe" />
+          <button type="submit">
+            Subscribe
+            <svg
+              class="subscribe-footer"
+              width="24"
+              height="24"
+              aria-label="icon subscribe"
+            >
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close" type="button">
+          <svg
+            class="modal-close-icon"
+            width="8"
+            height="8"
+            aria-label="icon close"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-sentence">
+          Leave your contacts and we will call you back
+        </p>
+        <form>
+          <div>
+            <label class="form-field-label" for="user-name">Name</label>
+            <input
+              class="form-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+            />
+          </div>
+          <div>
+            <label class="form-field-label" for="user-tel">Phone</label>
+            <input
+              class="form-input"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+            />
+          </div>
+          <div>
+            <label class="form-field-label" for="user-email">Email</label>
+            <input
+              class="form-input"
+              id="user-email"
+              name="user-email"
+              type="email"
+            />
+          </div>
+          <div>
+            <label class="form-field-label" for="user-comment">Comment</label>
+            <textarea
+              class="form-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div>
+            <input
+              class="form-checkbox"
+              id="user-privacy-policy"
+              name="user-privacy-policy"
+              type="checkbox"
+              value="true"
+            />
+            <label class="form-checkbox-label" for="user-privacy-policy">
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
